@@ -406,9 +406,9 @@ NSString *const SRHTTPResponseErrorKey = @"HTTPResponseStatusCode";
     }
 
     [self.delegateController performDelegateBlock:^(id<SRWebSocketDelegate>  _Nullable delegate, SRDelegateAvailableMethods availableMethods) {
-        if (availableMethods.didOpen) {
+//        if (availableMethods.didOpen) {
             [delegate webSocketDidOpen:self];
-        }
+//        }
     }];
 }
 

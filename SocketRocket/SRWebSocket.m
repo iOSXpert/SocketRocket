@@ -551,9 +551,9 @@ NSString *const SRHTTPResponseErrorKey = @"HTTPResponseStatusCode";
         if (self.readyState != SR_CLOSED) {
             _failed = YES;
             [self.delegateController performDelegateBlock:^(id<SRWebSocketDelegate>  _Nullable delegate, SRDelegateAvailableMethods availableMethods) {
-                if (availableMethods.didFailWithError) {
+//                if (availableMethods.didFailWithError) {
                     [delegate webSocket:self didFailWithError:error];
-                }
+//                }
             }];
 
             self.readyState = SR_CLOSED;
